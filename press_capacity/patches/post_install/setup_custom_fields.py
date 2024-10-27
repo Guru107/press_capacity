@@ -10,7 +10,7 @@ def add_is_press_part_checkbox():
             'fieldname': 'is_press_part',
             'fieldtype': 'Check',
             'label': 'Is Press Part',
-            'insert_after': 'Check this box if the item is a press part'  # Adjust this to place the field where you want
+            'insert_after': 'Supply Raw Materials for Purchase'  # Adjust this to place the field where you want
         })
         custom_field.insert()
         frappe.db.commit()
