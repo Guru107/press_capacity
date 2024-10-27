@@ -4,7 +4,7 @@ name: CI
 on:
   push:
     branches:
-      - main
+      - develop
   pull_request:
 
 concurrency:
@@ -89,7 +89,7 @@ jobs:
       - name: Install
         working-directory: /home/runner/frappe-bench
         run: |
-          bench get-app erpnext --resolve-deps --branch version-15
+          bench get-app erpnext --resolve-deps
           bench get-app press_capacity $GITHUB_WORKSPACE
           bench setup requirements --dev
           bench new-site --db-root-password root --admin-password admin test_site
