@@ -11,15 +11,15 @@ app_license = "mit"
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
-# 	{
-# 		"name": "press_capacity",
-# 		"logo": "/assets/press_capacity/logo.png",
-# 		"title": "Press Capacity",
-# 		"route": "/press_capacity",
-# 		"has_permission": "press_capacity.api.permission.has_app_permission"
-# 	}
-# ]
+add_to_apps_screen = [
+	{
+		"name": "press_capacity",
+		"logo": "/assets/press_capacity/images/logo.png",
+		"title": "Press Capacity",
+		"route": "/press_capacity",
+		#"has_permission": "press_capacity.api.permission.has_app_permission"
+	}
+]
 
 # Includes in <head>
 # ------------------
@@ -83,7 +83,7 @@ app_license = "mit"
 # ------------
 
 # before_install = "press_capacity.install.before_install"
-# after_install = "press_capacity.install.after_install"
+after_install = "press_capacity.install.after_install"
 
 # Uninstallation
 # ------------
