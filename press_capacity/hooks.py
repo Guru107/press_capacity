@@ -26,7 +26,7 @@ add_to_apps_screen = [
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/press_capacity/css/press_capacity.css"
-# app_include_js = "/assets/press_capacity/js/press_capacity.js"
+#app_include_js = "/assets/press_capacity/js/press_capacity.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/press_capacity/css/press_capacity.css"
@@ -47,7 +47,7 @@ add_to_apps_screen = [
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
-
+doctype_js = {"Item": "client_scripts/item.js"}
 # Svg Icons
 # ------------------
 # include app icons in desk
@@ -89,7 +89,7 @@ after_install = "press_capacity.install.after_install"
 # ------------
 
 # before_uninstall = "press_capacity.uninstall.before_uninstall"
-# after_uninstall = "press_capacity.uninstall.after_uninstall"
+after_uninstall = "press_capacity.uninstall.after_uninstall"
 
 # Integration Setup
 # ------------------
