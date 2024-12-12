@@ -1,0 +1,31 @@
+{
+    "actions":[],
+    "default_view": "List",
+    "doctype": "DocType",
+    "engine": "InnoDB",
+    "editable_grid": 1,
+    "istable": 1,
+    "custom":1,
+    "field_order": [
+        "pc_workstation_type",
+        "pc_no_operation"
+    ],
+    "fields": [
+        {
+            "fieldname":"pc_workstation_type",
+            "fieldtype": "Link",
+            "in_list_view": 1,
+            "label": "Workstation Type",
+            "options":"Workstation Type",
+            "unique": 1
+        },
+        {
+            "fieldname":"pc_no_operation",
+            "fieldtype": "Int",
+            "in_list_view": 1,
+            "label": "No. of Operation"
+        }
+    ],
+    "module":"Press Capacity",
+    "name":"Item Operations"
+}
