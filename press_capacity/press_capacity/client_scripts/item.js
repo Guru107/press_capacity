@@ -1,4 +1,5 @@
 // Client script for Item DocType
+/*
 frappe.ui.form.on('Item', {
     refresh: function(frm) {
         // Ensure the field visibility is set correctly on form load
@@ -22,7 +23,8 @@ frappe.ui.form.on('Item', {
         }
     }
 });
-
+*/
+/*
 // Handle child table events
 frappe.ui.form.on('Press Operations', {
     form_render: function(frm, cdt, cdn) {
@@ -37,3 +39,4 @@ frappe.ui.form.on('Press Operations', {
         }
     }
 });
+*/

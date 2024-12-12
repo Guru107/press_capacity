@@ -88,8 +88,8 @@ after_install = "press_capacity.install.after_install"
 # Uninstallation
 # ------------
 
-# before_uninstall = "press_capacity.uninstall.before_uninstall"
-after_uninstall = "press_capacity.uninstall.after_uninstall"
+before_uninstall = "press_capacity.uninstall.before_uninstall"
+#after_uninstall = "press_capacity.uninstall.after_uninstall"
 
 # Integration Setup
 # ------------------
