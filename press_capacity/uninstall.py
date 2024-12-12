@@ -1,5 +1,6 @@
 import frappe
-from press_capacity.patches.post_install.setup_custom_fields import remove_custom_fields
+from press_capacity.press_capacity.teardown import before_uninstall as remove_custom_fields
 
-def after_uninstall():
+def before_uninstall():
     remove_custom_fields()
+

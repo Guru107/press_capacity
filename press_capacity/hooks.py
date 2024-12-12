@@ -47,7 +47,7 @@ add_to_apps_screen = [
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
-doctype_js = {"Item": "client_scripts/item.js"}
+doctype_js = {"Item": "press_capacity/client_scripts/item.js"}
 # Svg Icons
 # ------------------
 # include app icons in desk
@@ -88,8 +88,8 @@ after_install = "press_capacity.install.after_install"
 # Uninstallation
 # ------------
 
-# before_uninstall = "press_capacity.uninstall.before_uninstall"
-after_uninstall = "press_capacity.uninstall.after_uninstall"
+before_uninstall = "press_capacity.uninstall.before_uninstall"
+#after_uninstall = "press_capacity.uninstall.after_uninstall"
 
 # Integration Setup
 # ------------------
