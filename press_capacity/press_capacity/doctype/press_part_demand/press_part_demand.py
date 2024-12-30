@@ -1,4 +1,4 @@
+import frappe
 from frappe.model.document import Document
-
-class ItemOperations(Document):
+class PressPartDemand(Document):
     pass
