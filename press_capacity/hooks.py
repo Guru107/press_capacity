@@ -12,14 +12,15 @@ required_apps = ["erpnext"]
 
 # Each item in the list will be shown as an app in the apps page
 add_to_apps_screen = [
-    {
-        "name": "press_capacity",
-        "logo": "/assets/press_capacity/images/logo.png",
-        "title": "Press Capacity",
-        "route": "List/Press Part Demand",
-        #"has_permission": "press_capacity.api.permission.has_app_permission"
-    }
+	{
+		"name": "press_capacity",
+		"logo": "/assets/press_capacity/images/logo.png",
+		"title": "Press Capacity",
+		"route": "/press_capacity",
+		#"has_permission": "press_capacity.api.permission.has_app_permission"
+	}
 ]
+
 # Includes in <head>
 # ------------------
 
@@ -47,9 +48,6 @@ add_to_apps_screen = [
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 # doctype_js = {"Item": "press_capacity/client_scripts/item.js"}
-doctype_list_js = {
-    "Press Part Demand": "press_capacity/client_scripts/press_part_demand_list.js"
-}
 # Svg Icons
 # ------------------
 # include app icons in desk
@@ -243,3 +241,4 @@ before_uninstall = "press_capacity.uninstall.before_uninstall"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
+

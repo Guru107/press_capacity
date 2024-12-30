@@ -1,84 +1,64 @@
-
 CUSTOM_FIELDS = {
-'Item': [{
-    'doctype': 'Custom Field',
-    'dt': 'Item',
-    'fieldname': 'pc_is_press_part',
-    'fieldtype': 'Check',
-    'label': 'Is Press Part',
-    'insert_after': 'is_sub_contracted_item',
-}, {
-    'fieldname': 'pc_tab_break',
-    'label': 'Press Capacity Planning',
-    'fieldtype': 'Tab Break',
-    'insert_after': 'Manufacturing',
-    'depends_on': 'pc_is_press_part',
-}, {
-    'doctype': 'Custom Field',
-    'dt': 'Item',
-    'fieldname': 'pc_qty_per_vehicle',
-    'fieldtype': 'Int',
-    'label': 'Qty/Vehicle',
-    'insert_after': 'pc_tab_break',
-    'default': 1,
-}, {
-    'doctype': 'Custom Field',
-    'dt': 'Item',
-    'fieldname': 'pc_item_operation',
-    'fieldtype': 'Table',
-    'options': 'Press Part Operations',
-    'label': 'Item Operations',
-    'insert_after': 'pc_max_forecast',
-}], 
-'Workstation Type': [{
-    'doctype': 'Custom Field',
-    'dt': 'Workstation Type',
-    'fieldname': 'pc_is_press_workstation',
-    'fieldtype': 'Check',
-    'label': 'Is Press Machine',
-    'insert_after': 'hour_rate',
-}, {
-    'doctype': 'Custom Field',
-    'dt': 'Workstation Type',
-    'fieldtype': 'Tab Break',
-    'fieldname': 'pc_wt_tab_break',
-    'label': 'Press Capacity Planning',
-    'depends_on': 'pc_is_press_workstation',
-    'insert_after': 'description',
-}, {
-    'doctype': 'Custom Field',
-    'dt': 'Workstation Type',
-    'fieldname': 'pc_stroke_per_minute',
-    'fieldtype': 'Int',
-    'label': 'Stroke/Minute',
-    'depends_on': 'pc_is_press_workstation',
-    'insert_after': 'pc_wt_tab_break',
-}, {
-    'doctype': 'Custom Field',
-    'dt': 'Workstation Type',
-    'fieldname': 'pc_available_time_per_shift',
-    'fieldtype': 'Int',
-    'label': 'Available Time/Shift',
-    'depends_on': 'pc_is_press_workstation',
-    'insert_after': 'pc_wt_tab_break',
-}, {
-    'doctype': 'Custom Field',
-    'fieldname': 'pc_utilization_target',
-    'fieldtype': 'Percent',
-    'dt': 'Workstation Type',
-    'label': 'Utilization Target%',
-    'default': 80,
-    'depends_on': 'pc_is_press_workstation',
-    'insert_after': 'pc_wt_tab_break',
-}, {
-    'doctype': 'Custom Field',
-    'fieldname': 'pc_shifts',
-    'fieldtype': 'Int',
-    'dt': 'Workstation Type',
-    'label': 'No. of Shifts',
-    'default': 1,
-    'depends_on': 'pc_is_press_workstation',
-    'insert_after': 'pc_wt_tab_break',
-    }
-]
+    "Item":[
+       {
+            'doctype': 'Custom Field',
+            'dt': 'Item',
+            'fieldname': 'pc_is_press_part',
+            'fieldtype': 'Check',
+            'label': 'Is Press Part',
+            'insert_after': 'is_sub_contracted_item'  # Adjust this to place the field where you want
+        },
+        {
+            "fieldname": "pc_tab_break",
+            "label": "Press Capacity Planning",
+            "fieldtype": "Tab Break",
+            "insert_after": "Manufacturing",
+            "depends_on":"pc_is_press_part"
+        },
+        {
+            'doctype': 'Custom Field',
+            'dt': 'Item', 
+            'fieldname': 'pc_qty_per_vehicle',
+            'fieldtype': 'Int',
+            'label': 'Qty/Vehicle',
+            'insert_after': 'pc_tab_break',
+            'default': 1
+        },
+        {
+            'doctype': 'Custom Field',
+            'dt': 'Item', 
+            'fieldname': 'pc_min_forecast',
+            'fieldtype': 'Int',
+            'label': 'Min Forecast',
+            'insert_after': 'pc_qty_per_vehicle',
+            'default': 0
+        },
+        {
+            'doctype': 'Custom Field',
+            'dt': 'Item', 
+            'fieldname': 'pc_avg_forecast',
+            'fieldtype': 'Int',
+            'label': 'Avg Forecast',
+            'insert_after': 'pc_min_forecast',
+            'default': 0
+        },
+        {
+            'doctype': 'Custom Field',
+            'dt': 'Item', 
+            'fieldname': 'pc_max_forecast',
+            'fieldtype': 'Int',
+            'label': 'Max Forecast',
+            'insert_after': 'pc_avg_forecast',
+            'default': 0
+        },
+        {
+            "doctype":'Custom Field',
+            'dt':'Item',
+            'fieldname':'pc_item_operation',
+            'fieldtype':'Table',
+            'options':'Item Operations',
+            'label': 'Item Operations',
+            'insert_after':'pc_max_forecast'
+        }
+    ]
 }
